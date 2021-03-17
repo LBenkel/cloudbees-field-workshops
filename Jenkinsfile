@@ -19,5 +19,11 @@ pipeline {
       }
     }
 
+    stage('step04') {
+      steps {
+        git 'https://github.com/LBenkel/Pipeline.git'
+      }
+    }
+
   }
 }
