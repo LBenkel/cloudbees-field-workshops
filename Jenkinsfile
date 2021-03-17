@@ -13,5 +13,11 @@ pipeline {
       }
     }
 
+    stage('step03') {
+      steps {
+        triggerRemoteJob 'https://cbci.cloudbees.demo/master03/job/event_trigger/'
+      }
+    }
+
   }
 }
