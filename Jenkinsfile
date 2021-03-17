@@ -13,17 +13,5 @@ pipeline {
       }
     }
 
-    stage('step03') {
-      steps {
-        triggerRemoteJob 'https://cbci.cloudbees.demo/master03/job/event_trigger/'
-      }
-    }
-
-    stage('step04') {
-      steps {
-        git 'https://github.com/LBenkel/Pipeline.git'
-      }
-    }
-
   }
 }
